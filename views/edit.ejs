@@ -1,0 +1,46 @@
+<%- include("header.ejs") %>
+<div class="edit-user-form" style="position: relative; top: 100px">
+  <form action="/edit/<%= user.id %>" id="edit-user" enctype="multipart/form-data" method="post">
+    <h3 class="edit-user-heading">Edit User Details</h3>
+    <div class="name">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter Name"
+        value="<%= user.name %>"
+        required
+      />
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+        value="<%= user.email %>"
+        required
+      />
+    </div>
+    <div class="phone">
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter Phone Number"
+        value="<%= user.phone %>"
+        required
+      />
+    </div>
+    <div class="edit-user-image">
+      <label for="image">Profile Image:</label>
+      <input type="file" id="image" name="image" required  value="<%= user.image %>"/>
+    </div>
+    <div class="edit-user-submit">
+      <input type="submit" name="addUser" value="Update User" />
+    </div>
+  </form>
+</div>

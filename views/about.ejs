@@ -1,0 +1,29 @@
+<%- include("header.ejs") %>
+<div class="container d-flex justify-content-center">
+  <div class="about-container">
+      <h1 class="about-header">About This CRUD App</h1>
+      <p>This application is a simple demonstration of a CRUD (Create, Read, Update, Delete) system using Node.js, Express, and MongoDB. It allows users to perform the following operations:</p>
+      
+      <ul class="about-list list-group">
+          <li class="list-group-item"><strong>Create:</strong> Add new user details to the database.</li>
+          <li class="list-group-item"><strong>Read:</strong> View a list of all users stored in the database.</li>
+          <li class="list-group-item"><strong>Update:</strong> Edit existing user details.</li>
+          <li class="list-group-item"><strong>Delete:</strong> Remove a user from the database.</li>
+      </ul>
+
+      <h2 class="mt-4">Technologies Used</h2>
+      <ul class="tech-list list-group">
+          <li class="list-group-item">Node.js</li>
+          <li class="list-group-item">Express.js</li>
+          <li class="list-group-item">MongoDB</li>
+          <li class="list-group-item">Mongoose (for database operations)</li>
+          <li class="list-group-item">Multer (for file uploads)</li>
+          <li class="list-group-item">Bootstrap (for styling)</li>
+      </ul>
+
+      <div class="text-center">
+          <a href="/" class="btn btn-custom">Go Back to Home</a>
+      </div>
+  </div>
+</div>
+<%- include("footer.ejs") %>

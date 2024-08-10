@@ -1,0 +1,25 @@
+<%- include("header.ejs")  %>
+  <div class="add-user-form" style="position: relative; top: 100px;">
+   <form action="/add" id="add-user" method="post" enctype="multipart/form-data">
+    <h3 class="add-user-heading">Add New User</h3>
+    <div class="name">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter Name" required>
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+    </div>
+    <div class="phone">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+    </div>
+    <div class="add-user-image">
+      <label for="image">Profile Image:</label>
+      <input type="file" id="image" name="image" required>
+    </div>
+    <div class="add-user-submit">
+      <input type="submit" name="addUser" value="Add User">
+    </div>
+   </form>
+</div>

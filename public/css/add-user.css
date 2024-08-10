@@ -1,0 +1,104 @@
+/* root variables  */
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #0471ff;
+  --secondary: #333333;
+  --tertiary: #808080;
+  --light-gray: #f2f2f2;
+  --dark-gray: #cccccc;
+  /* font family  */
+  --font-family: 'Poppins', sans-serif;
+    /* box shadow  */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.add-user-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  position: absolute;
+  top: 100px;
+  z-index: 90;
+}
+
+#add-user{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+}
+
+.add-user-heading{
+  font-size: 2rem;
+  padding: 10px 0;
+  color: var(--white);
+  background-color: var(--primary);
+  text-align: center;
+}
+
+.name,
+.email,
+.phone, 
+.add-user-image,
+.add-user-submit{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.name input,
+.email input,
+.phone input, 
+.add-user-image input,
+.add-user-submit input {
+  padding: 10px;
+  border: 1px solid var(--dark-gray);
+  outline: none;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.add-user-image input{
+  width: 100%;
+  padding: 0 10px;
+  line-height: 3rem;
+}
+
+.add-user-submit input{
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size:1.3rem;
+  font-weight: 600;
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  #add-user {
+    width: 90%;
+  }
+
+  .add-user-heading {
+    font-size: 1.5rem;
+  }
+
+  .name,
+  .email,
+  .phone,
+  .add-user-image,
+  .add-user-submit {
+    width: 90%;
+  }
+
+  .add-user-submit input {
+    font-size: 1.1rem;
+  }
+}

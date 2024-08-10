@@ -1,0 +1,35 @@
+.about-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 50px;
+}
+.about-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #343a40;
+  text-align: center;
+}
+.about-list {
+  margin-top: 20px;
+}
+.about-list li {
+  margin-bottom: 10px;
+}
+.tech-list li {
+  margin-bottom: 8px;
+}
+.btn-custom {
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.btn-custom:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

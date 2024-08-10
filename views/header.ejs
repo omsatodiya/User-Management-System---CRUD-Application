@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- bootstrap link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- datatables  -->
+  <link href="https://cdn.datatables.net/v/bs5/dt-2.1.2/datatables.min.css" rel="stylesheet">
+
+  <!-- stylesheets link -->
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/add-user.css">
+  <link rel="stylesheet" href="/css/edit-user.css">
+  <link rel="stylesheet" href="/css/about.css">
+</head>
+<body >
+<header class="header">
+  <div class="header-logo">
+    <a href="/">CRUD App</a>
+  </div>
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="/"><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</a></li>
+      <li><a href="/add"> <i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i>Add User</a></li>
+      <li><a href="/about"><i class="fa-solid fa-info" style="color: #ffffff;"></i>About</a></li>
+      <li><a href="/contact"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+
+  // Close menu when a link is clicked
+  document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+    });
+  });
+});
+</script>

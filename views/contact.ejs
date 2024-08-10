@@ -1,0 +1,68 @@
+<%- include("header.ejs") %>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+      <div class="col-md-8">
+          <div class="card shadow-sm">
+              <!-- Contact Details Section -->
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-primary text-white text-center">
+                    <h2>My Contact Details</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <strong>Email:</strong> <a href="mailto:omsatodiya96@gmail.com">omsatodiya96@gmail.com</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-code mr-2"></i>
+                            <strong>LeetCode:</strong> <a href="https://leetcode.com/om_9609" target="_blank">Tranquil</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-file-alt mr-2"></i>
+                            <strong>Resume:</strong> <a href="https://link-to-your-resume.com" target="_blank">Download My Resume</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-code mr-2"></i>
+                            <strong>Codeforces:</strong> <a href="https://codeforces.com/profile/omsatodiya96" target="_blank">Tranquil</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-code mr-2"></i>
+                            <strong>CodeChef:</strong> <a href="https://www.codechef.com/users/om_satodiya" target="_blank">Om Satodiya</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-github mr-2"></i>
+                            <strong>GitHub:</strong> <a href="https://github.com/omsatodiya" target="_blank">github.com/omsatodiya</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+              <div class="card-header bg-primary text-white text-center">
+                  <h2>Contact Me</h2>
+              </div>
+              <div class="card-body">
+                  <p class="text-center">Have questions or feedback? Reach out to me using the form below:</p>
+                  <form action="/contact" method="POST">
+                      <div class="form-group mt-2">
+                          <label for="name">Your Name</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                      </div>
+                      <div class="form-group mt-2">
+                          <label for="email">Your Email</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="form-group mt-2">
+                          <label for="message">Your Message</label>
+                          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                      </div>
+                      <div class="text-center mt-3">
+                          <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<%- include("footer.ejs") %>
